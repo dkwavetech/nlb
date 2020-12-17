@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="utf-8">
+    <title>NLB Limited | Entreprise Digitale Innovante</title>
+    <meta name="keywords" content="Entreprise Digitale Innovante, NLB, NLB Limited, développement logiciels, imprimerie, communication, infographie">
+    <meta name="description" content="Entreprise Digitale Innovante">
+    <meta name="viewport" content="width=device-width">
+
     <!-- Title -->
     <title>NLB Limited</title>
 
@@ -43,14 +49,10 @@
              data-header-fix-moment-classes="light-theme u-theme-shadow-v1 g-bg-white g-py-10--md">
             <nav class="navbar navbar-expand-lg p-0 g-px-15">
                 <div class="container g-pos-rel">
-                    <a href="/" class="g-hidden-lg-up navbar-brand mr-0">
+                    <a href="{{path('app_site')}}" class="g-hidden-lg-up navbar-brand mr-0">
                         <img class="d-block g-width-140 g-width-160--md" src="{{ asset('img/logo-nlb.png')}}" alt="Image Description"
                              data-header-fix-moment-exclude="d-block"
                              data-header-fix-moment-classes="d-none">
-
-                        <img class="d-none g-width-140 g-width-160--md" src="{{ asset('img/logo-nlb.png')}}" alt="Image Description"
-                             data-header-fix-moment-exclude="d-none"
-                             data-header-fix-moment-classes="d-block">
                     </a>
 
                     <!-- Navigation -->
@@ -58,38 +60,34 @@
                         <ul class="js-scroll-nav navbar-nav align-items-lg-center text-uppercase g-font-weight-700 g-letter-spacing-1 g-font-size-12 g-pt-20 g-pt-0--lg mx-auto"
                             data-splitted-breakpoint="992">
                             <li class="nav-item g-mr-30--lg g-mb-7 g-mb-0--lg active">
-                                <a href="#home" class="nav-link p-0">Accueil <span class="sr-only">(current)</span></a>
+                                <a href="{{path('app_site')}}#home" class="nav-link p-0">Accueil <span class="sr-only">(current)</span></a>
                             </li>
 
                             <li class="nav-item g-mx-30--lg g-mb-7 g-mb-0--lg">
-                                <a href="#services" class="nav-link p-0">À propos</a>
+                                <a href="{{path('app_site')}}#services" class="nav-link p-0">À propos</a>
                             </li>
 
                             <li class="nav-item g-mx-30--lg g-mb-7 g-mb-0--lg">
-                                <a href="#about" class="nav-link p-0">Services</a>
+                                <a href="{{path('app_site')}}#about" class="nav-link p-0">Services</a>
                             </li>
 
                             <!-- Logo -->
                             <li class="g-hidden-lg-down nav-logo-item g-mx-15--lg">
-                                <a href="/" class="js-go-to navbar-brand mr-0"
+                                <a href="{{path('app_site')}}" class="js-go-to navbar-brand mr-0"
                                    data-type="static">
                                     <img class="d-block g-width-140 g-width-160--md" src="{{ asset('img/logo-nlb.png')}}" alt="Image Description"
                                          data-header-fix-moment-exclude="d-block"
                                          data-header-fix-moment-classes="d-none">
-
-                                    <img class="d-none g-width-140 g-width-160--md" src="{{ asset('img/logo-nlb.png')}}" alt="Image Description"
-                                         data-header-fix-moment-exclude="d-none"
-                                         data-header-fix-moment-classes="d-block">
                                 </a>
                             </li>
                             <!-- End Logo -->
 
                             <li class="nav-item g-mx-30--lg g-mb-7 g-mb-0--lg">
-                                <a href="#technologies" class="nav-link p-0">Projets</a>
+                                <a href="{{path('app_site')}}#technologies" class="nav-link p-0">Projets</a>
                             </li>
 
                             <li class="nav-item g-ml-30--lg">
-                                <a href="#contact" class="nav-link p-0">Contact</a>
+                                <a href="{{path('app_site')}}#contact" class="nav-link p-0">Contact</a>
                             </li>
                         </ul>
                     </div>
@@ -147,7 +145,7 @@
         <div class="container text-center g-max-width-750 g-mb-70">
             <div class="text-uppercase u-heading-v2-4--bottom g-brd-primary g-mb-30">
                 <h3 class="h3 g-letter-spacing-5 g-font-size-12 g-font-weight-400 g-color-primary g-mb-25">Qui sommes nous ?</h3>
-                <h2 class="u-heading-v2__title g-line-height-1 g-letter-spacing-2 g-font-size-30 g-font-size-40--md g-color-white mb-0">Notre savoir à votre service</h2>
+                <h2 class="u-heading-v2__title g-line-height-1 g-letter-spacing-2 g-font-size-30 g-font-size-40--md g-color-white mb-0">Notre savoir-faire à votre service</h2>
             </div>
 
             <p class="g-color-white-opacity-0_5 mb-0">Fondée en 2014, NLB Limited s'est spécialisée dans plusieurs domaines au fil des années, grâce à ses talents, notamment dans la conception graphique, le développement logiciel, la communication événementielle et l'infographie/imprimerie. </p>
@@ -378,7 +376,7 @@
                             <div class="col-sm-4 col-md-12">
                                 <i class="icon-envelope-open icon d-inline-block g-font-size-20 g-color-primary g-mb-7"></i>
                                 <h3 class="text-uppercase g-font-size-12 g-color-gray-dark-v5 g-font-weight-400 g-mb-5">Email</h3>
-                                <a class="g-color-black g-color-black--hover" href="mailto:info@unify.com"><strong class="g-font-size-14">contact@nlblimited.com</strong></a>
+                                <a class="g-color-black g-color-black--hover" href="mailto:contact@nlblimited.com"><strong class="g-font-size-14">contact@nlblimited.com</strong></a>
                             </div>
                         </address>
                     </div>
@@ -389,7 +387,7 @@
 
 
         <div class="text-center g-color-gray-dark-v5 g-theme-bg-blue-dark-v1 g-py-70">
-            <a class="d-block g-width-140 mx-auto g-mb-30" href="/">
+            <a class="d-block g-width-140 mx-auto g-mb-30" href="{{path('app_site')}}">
                 <img class="img-fluid" src="{{ asset('img/logo-nlb.png') }}" alt="Image description">
             </a>
 
@@ -406,6 +404,8 @@
                     <a class="u-icon-v3 g-width-35 g-height-35 g-font-size-16 g-color-gray-dark-v5 g-color-white--hover g-theme-bg-blue-dark-v2 g-bg-primary--hover g-transition-0_2 g-transition--ease-in" href="#"><i class="fa fa-linkedin"></i></a>
                 </li>
             </ul>
+
+            <p style="margin-top:20px; font-size: 12px">@ Copyright. All Rights Reserved. NLB Limited. <a href="{{path('app_mentions')}}">Mentions légales</a></p>
         </div>
     </footer>
     <!-- End Footer -->
